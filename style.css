@@ -24,9 +24,9 @@
   /* Section Styles */
   
   .main-nav {
-    font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
+    /* font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">;
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">; */
     width: 100%;
     background: purple;
     min-height: 30px;
@@ -100,7 +100,7 @@
     border-radius: 6px;
   }
   .card:hover {
-    border-color: #ff99ff;
+   color: #ff99ff;
   }
   
   ul.skills {
@@ -129,7 +129,17 @@ h3 {
   Color:purple;
   Letter-spacing: .5px;
 }
+#contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display:flex;
+  justify-content: space-evenly;
+}
 
+#email-img {
+  width: 376px;
+  height: 134px;
+}
 footer {
     width: 100%;
     min-height: 30px;
@@ -149,12 +159,17 @@ footer {
 
   /* Media Query */
   @media screen and (min-width: 720px) {
-    
+    .subflex {
+      display: flex;
+    }
+
     .flex {
         display: flex;
         max-width: 1200px;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
+        flex-direction: column;
     }
   
     header {
@@ -184,3 +199,11 @@ footer {
       max-width: 1200px;
       margin: 40px auto;
     }
+  }
+
+  @media screen and (max-width: 1058px) {
+    #contact img{
+      height: 150px;
+      width: 120px;
+    }
+  }
